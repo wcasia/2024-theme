@@ -115,6 +115,22 @@
 }
 .wca2024-hero {
 	padding-bottom: 5rem;
+	background-image: url(https://asia.wordcamp.org/2024/files/2023/11/background-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.wca2024-hero::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.62%, #fff 100%);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .wca2024-hero .wca2024-numbers-area {
 	margin-top: 0;
