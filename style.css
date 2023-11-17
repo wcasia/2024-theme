@@ -323,3 +323,10 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 .wca2024-schedule-card .wp-block-image + .wp-block-group {
 	width: 100%;
 }
+/* What to expect card */
+.wca2024-what-to-expect-card {
+	box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.wca2024-what-to-expect-card .wp-block-heading {
+	font-family: novel-display, sans-serif;
+}
