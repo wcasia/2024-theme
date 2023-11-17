@@ -46,6 +46,13 @@
 	-webkit-text-fill-color: transparent;
 }
 
+.wca2024-has-gradient-text.style-2 {
+	background: var(--gradient-text-01, linear-gradient(137deg, #442bd4 14.82%, #cd41b7 56.8%, #7d38d1 94.83%));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /* component */
 /* wp-block-button custom for 2024 website
  * For lightness, no styles are written here that can be added with the Editor's style
@@ -186,6 +193,22 @@
 		max-width: 150px;
 	}
 }
+/* Latest News */
+.wp-block-query .wp-block-post-template .wp-block-post {
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+}
+.wp-block-query .wp-block-post-template .wp-block-post .wp-block-group {
+	padding-bottom: 24px;
+}
+.wp-block-query .wp-block-post-template .wp-block-post .wp-block-group > * {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.wp-block-query .wp-block-post-template .wp-block-post .wp-block-group > .wp-block-post-featured-image {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 /* pattern */
 /* front page hero area styles */
 .wca2024-hero {
