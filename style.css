@@ -166,6 +166,11 @@
 	line-height: 1;
 }
 
+@media only screen and (min-width: 782px) {
+	.wca2024-event-date-location .wp-block-group.wca2024-event-date-location__inner {
+		display: block;
+	}
+}
 .wca2024-links-list-vertical {
 	list-style: none;
 	padding-left: 0;
