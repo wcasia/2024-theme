@@ -290,3 +290,13 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='119' height='140' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8721 67.2344L61.8721 71.8261L47.9585 23.8261L12.8721 67.2344Z' fill='%23214CFE'/%3E%3Cg style='mix-blend-mode:multiply'%3E%3Cpath d='M93.3685 69.6291L87.1399 71.0356L91.9501 92.3372L70.6817 97.1399L72.0732 103.302L93.3416 98.4994L98.1518 119.801L104.38 118.395L99.5702 97.0929L120.839 92.2902L119.447 86.128L98.1787 90.9307L93.3685 69.6291Z' fill='%234CB5FF'/%3E%3C/g%3E%3C/svg%3E");
 	}
 }
+/* Schedule card */
+.wca2024-schedule-card .wp-block-image {
+	width: 100%;
+}
+.wca2024-schedule-card .wp-block-image img {
+	width: 100%;
+}
+.wca2024-schedule-card .wp-block-image + .wp-block-group {
+	width: 100%;
+}
