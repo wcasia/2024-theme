@@ -4,32 +4,28 @@
  * Author URI: https://asia.wordcamp.org/2024/
  * Version: 0.0.1
  */
+/* function */
+/* custom clamp for fluid typography
+ * See:https://richtabor.com/fluid-typography-block-themes/
+ */
 /* base styles */
-body {
+:root {
+	/* All CSS variables are removed by Remote CSS bug.
+   * See: https://github.com/WordPress/wordcamp.org/issues/574
+   * But we have written here for the development.
+   */
 	/* typography */
 	--font-display: Sansita, novel-display, Roboto, sans-serif;
 	--font-heading: Roboto, sans-serif;
 	--font-body: "Roboto Slab", serif;
-	/* colors */
-	--wp--preset--color--custom-cyan-alt: #66daff;
-	--wp--preset--color--custom-cyan-primary: #4cb5ff;
-	--wp--preset--color--custom-dark-blue-3-a-for-white: #280997;
-	--wp--preset--color--custom-dark-blue-alt: #420efc;
-	--wp--preset--color--custom-dark-blue-primary: #2d03c2;
-	--wp--preset--color--custom-light-blue-3-a-for-white: #1d43e1;
-	--wp--preset--color--custom-light-blue-alt: #5072ff;
-	--wp--preset--color--custom-light-blue-primary: #214cfe;
-	--wp--preset--color--custom-pink-alt: #da5efa;
-	--wp--preset--color--custom-pink-primary: #eb24bd;
-	--wp--preset--color--custom-red-3-a-for-white: #b30925;
-	--wp--preset--color--custom-red-alt: #ff5f55;
-	--wp--preset--color--custom-red-primary: #f94202;
-	--wp--preset--color--custom-yellow-alt: #ffc054;
-	--wp--preset--color--custom-yellow-primary: #fdaa1b;
-	--wp--preset--color--custom-gray-dark: #3c3650;
-	--wp--preset--color--custom-gray-light: #c8cee5;
-	--wp--preset--color--custom-gray-mid: #9ba0b2;
-	--wp--preset--color--custom-gray-text: #5a6388;
+	/* font size */
+	--font-size-display-m: 5.3rem;
+	--font-size-3xl: 4.3rem;
+	--font-size-2xl: 3.4rem;
+	--font-size-xl: 2.7rem;
+	--font-size-l: 2.2rem;
+	--font-size-m: 1.8rem;
+	--font-size-s: 1.4rem;
 	/* numbers */
 	--scales-2xs: 0.25rem;
 	--scales-xs: 0.5rem;
@@ -68,6 +64,39 @@ body {
 }
 
 /* component */
+/* wp-block-heading custom for 2024 website
+ * For lightness, no styles are written here that can be added with the Editor's style
+*/
+/* font size */
+h2.wp-block-heading {
+	font-size: clamp(var(--font-size-xl, 2.7rem), var(--font-size-xl, 2.7rem) + (1vw - 0.48rem) * 1.592, var(--font-size-2xl, 3.4rem));
+	line-height: 1.16;
+}
+
+h3.wp-block-heading {
+	font-size: clamp(var(--font-size-l, 2.2rem), var(--font-size-l, 2.2rem) + (1vw - 0.48rem) * 1.592, var(--font-size-xl, 2.7rem));
+	line-height: 1.2;
+}
+
+h4.wp-block-heading {
+	font-size: clamp(var(--font-size-m, 1.8rem), var(--font-size-m, 1.8rem) + (1vw - 0.48rem) * 1.592, var(--font-size-l, 2.2rem));
+	line-height: 1.25;
+}
+
+h5.wp-block-heading {
+	font-size: clamp(var(--font-size-s, 1.4rem), var(--font-size-s, 1.4rem) + (1vw - 0.48rem) * 1.592, var(--font-size-m, 1.8rem));
+	line-height: 1.4;
+}
+
+h6.wp-block-heading {
+	font-size: clamp(1.2, 1.2 + (1vw - 0.48rem) * 1.592, var(--font-size-s, 1.4rem));
+}
+
+h5.wp-block-heading,
+h6.wp-block-heading {
+	text-transform: none;
+}
+
 /* wp-block-button custom for 2024 website
  * For lightness, no styles are written here that can be added with the Editor's style
 */
@@ -216,9 +245,7 @@ body {
 .wp-block-query .wp-block-post-template .wp-block-post .wp-block-group > .wp-block-post-featured-image {
 	margin-left: 0;
 	margin-right: 0;
-}
-
-/* pattern */
+} /* pattern */
 /* front page hero area styles */
 .wca2024-hero {
 	padding-bottom: 5rem;
