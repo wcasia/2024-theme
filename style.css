@@ -1,5 +1,5 @@
 body {
-	--font-display: Sansita, novel-display, sans-serif;
+	--font-display: Sansita, novel-display, Roboto, sans-serif;
 	--font-heading: Roboto, sans-serif;
 	--font-body: "Roboto Slab", serif;
 	--wp--preset--color--custom-cyan-alt: #66daff;
@@ -216,7 +216,7 @@ body .is-layout-constrained > .alignwide.wca2024-numbers-area {
 	max-width: 63rem;
 }
 .wca2024-ticket-block .wp-block-heading.wca2024-has-gradient-text {
-	font-family: var(--font-display);
+	font-family: var(--font-display, Sansita, novel-display, Roboto, sans-serif);
 }
 .wca2024-ticket-block > .wp-block-group:first-child > * {
 	flex: 1;
@@ -226,6 +226,7 @@ body .is-layout-constrained > .alignwide.wca2024-numbers-area {
 	margin-right: auto;
 	max-width: 925px;
 }
+.wca2024-ticket-block,
 body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	max-width: 63rem;
 }
