@@ -55,6 +55,9 @@ body {
 	gap: var(--scales-xs, 0.5rem);
 	padding-right: 2.5rem;
 }
+.wp-block-button .wp-block-button__link:visited {
+	color: var(--wp--preset--color--base, #fff);
+}
 .wp-block-button .wp-block-button__link::before,
 .wp-block-button .wp-block-button__link::after {
 	content: "";
