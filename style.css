@@ -181,6 +181,12 @@ body {
 		display: block;
 	}
 }
+@media only screen and (min-width: 600px) {
+	.site-header .wp-block-navigation > li.has-child:last-child > .wp-block-navigation-submenu {
+		left: auto;
+		right: 0;
+	}
+}
 .wca2024-links-list-vertical {
 	list-style: none;
 	padding-left: 0;
