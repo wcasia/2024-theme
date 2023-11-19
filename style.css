@@ -190,7 +190,7 @@ h6.wp-block-heading {
  * For lightness, no styles are written here that can be added with the Editor's style
 */
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-	background-color: var(----wp--preset--color--custom-dark-blue-3-a-for-white, #2d03c2);
+	background-color: var(--wp--preset--color--custom-dark-blue-3-a-for-white, #2d03c2);
 	color: #fff;
 }
 .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open {
@@ -288,6 +288,20 @@ h6.wp-block-heading {
 @media only screen and (max-width: 520px) {
 	.wca2024-footer-credit > .wp-block-group p {
 		max-width: 150px;
+	}
+}
+@media only screen and (max-width: 781px) {
+	body .is-layout-flex > .site-footer-row-2 {
+		max-width: 190px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.wca2024-footer-credit > div > div {
+		display: block;
+		text-align: center;
+	}
+	.wca2024-footer-credit > div > div > * {
+		margin-bottom: 2rem;
 	}
 }
 /* Latest News */
