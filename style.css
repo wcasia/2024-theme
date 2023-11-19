@@ -256,7 +256,7 @@ h6.wp-block-heading {
 
 @media only screen and (min-width: 782px) {
 	.wca2024-header-col-left {
-		flex-basis: 40% !important;
+		flex-basis: 361px !important;
 	}
 }
 
@@ -264,6 +264,26 @@ h6.wp-block-heading {
 	line-height: 1;
 }
 
+.wp-block-navigation .wp-block-navigation__responsive-container-open {
+	background: url("https://asia.wordcamp.org/2024/files/2023/11/chevron-down.png") center right no-repeat;
+	background-size: 16px;
+	padding-right: 24px;
+}
+
+@media only screen and (min-width: 782px) and (max-width: 1200px) {
+	.wca2024-header-col-left {
+		flex-basis: 227px !important;
+	}
+	body .is-layout-flex.wca2024-header-branding {
+		display: block;
+	}
+	.wca2024-event-date-location {
+		max-width: 162px;
+	}
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.header-right-col {
+		flex-basis: 100% !important;
+	}
+}
 @media only screen and (min-width: 782px) {
 	.wca2024-event-date-location .wp-block-group.wca2024-event-date-location__inner {
 		display: block;
@@ -273,6 +293,26 @@ h6.wp-block-heading {
 	.site-header .wp-block-navigation > li.has-child:last-child > .wp-block-navigation-submenu {
 		left: auto;
 		right: 0;
+	}
+}
+@media screen and (max-width: 991px) {
+	.site-header .wp-block-navigation__responsive-container-open {
+		display: block !important;
+	}
+	.site-header .wp-block-navigation__responsive-container:not(.is-menu-open.has-modal-open) {
+		display: none !important;
+	}
+	.site-header {
+		position: relative;
+	}
+	.header-right-col {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		max-width: 80px;
+	}
+	.logged-in .header-right-col {
+		top: 20px;
 	}
 }
 .wca2024-links-list-vertical {
