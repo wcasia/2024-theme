@@ -503,7 +503,7 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 
 /* page */
 /* only ticket page style */
-.slug-tickets input[type="submit"] {
+.page-slug-tickets input[type="submit"] {
 	background-color: var(--wp--preset--color--custom-dark-blue-3-a-for-white, #2d03c2);
 	color: #fff;
 	padding: var(--scales-s, 1rem);
@@ -517,10 +517,10 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	position: relative;
 	gap: var(--scales-xs, 0.5rem);
 }
-.slug-tickets input[type="submit"]:hover {
+.page-slug-tickets input[type="submit"]:hover {
 	background-color: var(--wp--preset--color--custom-dark-blue-alt, #420efc);
 }
-.slug-tickets input[type="submit"]:hover::before,
-.slug-tickets input[type="submit"]:hover::after {
+.page-slug-tickets input[type="submit"]:hover::before,
+.page-slug-tickets input[type="submit"]:hover::after {
 	opacity: 1;
 }
