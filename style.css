@@ -500,3 +500,27 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 .wca2024-what-to-expect-card .wp-block-heading {
 	font-family: novel-display, sans-serif;
 }
+
+/* page */
+/* only ticket page style */
+.slug-tickets input[type="submit"] {
+	background-color: var(--wp--preset--color--custom-dark-blue-3-a-for-white, #2d03c2);
+	color: #fff;
+	padding: var(--scales-s, 1rem);
+	border: 0;
+	border-radius: var(--round-s, 0.25rem);
+	font-family: var(--font-body, "Roboto Slab", serif);
+	font-size: 1rem;
+	transition: all 200ms ease-out;
+	display: flex;
+	align-items: center;
+	position: relative;
+	gap: var(--scales-xs, 0.5rem);
+}
+.slug-tickets input[type="submit"]:hover {
+	background-color: var(--wp--preset--color--custom-dark-blue-alt, #420efc);
+}
+.slug-tickets input[type="submit"]:hover::before,
+.slug-tickets input[type="submit"]:hover::after {
+	opacity: 1;
+}
