@@ -355,6 +355,13 @@ h6.wp-block-heading {
 	padding-left: 0;
 }
 
+.wca2024-subscribe h4 {
+	opacity: 0.5;
+}
+.wca2024-subscribe .wp-block-jetpack-subscriptions {
+	max-width: 412px;
+}
+
 @media only screen and (min-width: 782px) {
 	.wca2024-footer-credit .wp-block-group {
 		max-width: 470px !important;
