@@ -531,3 +531,66 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 .page-slug-tickets input[type="submit"]:hover::after {
 	opacity: 1;
 }
+
+/* Order summary table */
+table.tix_tickets_table.tix-order-summary {
+	width: 100%;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	padding: 0;
+	border-spacing: 0;
+}
+table.tix_tickets_table.tix-order-summary th {
+	border-bottom: 1px solid var(--wp--preset--color--contrast, #000);
+	font-weight: normal;
+}
+table.tix_tickets_table.tix-order-summary th,
+table.tix_tickets_table.tix-order-summary td {
+	padding: 10px;
+}
+table.tix_tickets_table.tix-order-summary td.tix-column-description strong {
+	font-weight: normal;
+}
+table.tix_tickets_table.tix-order-summary tr.tix-row-total .screen-reader-text {
+	visibility: visible;
+	-webkit-clip-path: none !important;
+	clip-path: none !important;
+	position: static !important;
+}
+
+td.tix-left {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+.tix-row-health-advisory td.tix-left {
+	text-align: left;
+}
+
+td.tix-right {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+}
+
+.tix-ticket-form input[type="text"],
+.tix-ticket-form input[type="email"],
+.tix-ticket-form input[type="url"],
+.tix-ticket-form textarea,
+.tix-private-form input[type="text"],
+.tix-private-form input[type="email"],
+.tix-private-form input[type="url"],
+.tix-private-form textarea,
+.tix-attendee-form input[type="text"],
+.tix-attendee-form input[type="email"],
+.tix-attendee-form input[type="url"],
+.tix-attendee-form textarea,
+.tix-receipt-form input[type="text"],
+.tix-receipt-form input[type="email"],
+.tix-receipt-form input[type="url"],
+.tix-receipt-form textarea {
+	width: 70%;
+	height: 30px;
+}
