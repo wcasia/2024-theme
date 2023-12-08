@@ -42,6 +42,11 @@
 	--gradient-base: linear-gradient(180deg, #8139f0 5.73%, #4394ec 26.56%, rgba(35, 111, 226, 0) 81.25%);
 }
 
+/* for ticket-block pattern */
+body {
+	container-type: inline-size;
+}
+
 .wca2024-has-gradient-text {
 	background: var(--wp--preset--gradient--custom-text-02, linear-gradient(91deg, #1d43e1 1.28%, #236fe2 43.86%, #452cd5 80.64%));
 	background-clip: text;
@@ -477,16 +482,30 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 		top: 0;
 	}
 	.wca2024-ticket-block::before {
-		left: calc(0px - (50vw - 50%));
+		left: calc(0px - (50cqi - 50%));
 		width: 9.3rem;
 		height: 9.3rem;
 		background-image: url(https://asia.wordcamp.org/2024/files/2023/11/shapes-circle-line.png);
 	}
 	.wca2024-ticket-block::after {
-		right: calc(0px - (50vw - 50%));
+		right: calc(0px - (50cqi - 50%));
 		width: 7.3rem;
 		height: 6.3rem;
 		background-image: url(https://asia.wordcamp.org/2024/files/2023/11/shapes-group01.png);
+	}
+}
+/* hack for Safari under 16 */
+@supports (-webkit-hyphens: none) {
+	@media screen and (min-width: 783px) {
+		body {
+			overflow-x: hidden;
+		}
+		.wca2024-ticket-block::before {
+			left: calc(0px - (50vw - 50%));
+		}
+		.wca2024-ticket-block::after {
+			right: calc(0px - (50vw - 50%));
+		}
 	}
 }
 /* Schedule card */
