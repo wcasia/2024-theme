@@ -40,6 +40,7 @@
 	--shadow-medium: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
 	/* gradient */
 	--gradient-base: linear-gradient(180deg, #8139f0 5.73%, #4394ec 26.56%, rgba(35, 111, 226, 0) 81.25%);
+	--gradient-text-01: linear-gradient(137deg, #442bd4 14.82%, #cd41b7 56.8%, #7d38d1 94.83%);
 }
 
 /* for ticket-block pattern */
@@ -146,6 +147,13 @@ h6.wp-block-heading {
 .wp-block-button .wp-block-button__link:hover::before,
 .wp-block-button .wp-block-button__link:hover::after {
 	opacity: 1;
+}
+.wp-block-button input.wp-block-button__link {
+	padding-right: 1rem;
+}
+.wp-block-button input.wp-block-button__link::before,
+.wp-block-button input.wp-block-button__link::after {
+	display: none;
 }
 .wp-block-button.is-style-fill .wp-block-button__link {
 	background: #fff;
@@ -287,6 +295,12 @@ h6.wp-block-heading {
 /* wp-block-post-terms custom for 2024 website
  * For lightness, no styles are written here that can be added with the Editor's style
 */
+.wp-block-post-terms {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
 .wp-block-post-terms a {
 	transition: all 200ms ease-out;
 	text-decoration: none;
@@ -297,6 +311,9 @@ h6.wp-block-heading {
 .wp-block-post-terms a:hover {
 	color: #fff;
 	background-color: var(--wp--preset--color--custom-light-blue-3-a-for-white, #1d43e1);
+}
+.wp-block-post-terms .wp-block-post-terms__separator {
+	display: none;
 }
 
 /* wp-block-post-author custom for 2024 website
@@ -562,6 +579,23 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 }
 
 /* page */
+/* only single (post) page style */
+.single main {
+	margin-top: 0;
+}
+.single .wp-block-post-title {
+	background: var(--gradient-text-01, linear-gradient(137deg, #442bd4 14.82%, #cd41b7 56.8%, #7d38d1 94.83%));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 783px) {
+	.single .wp-block-post-featured-image {
+		margin-left: calc(50% - 50cqi) !important;
+		margin-right: calc(50% - 50cqi) !important;
+	}
+}
 /* only ticket page style */
 .page-slug-tickets input[type="submit"] {
 	background-color: var(--wp--preset--color--custom-dark-blue-3-a-for-white, #2d03c2);
