@@ -284,6 +284,40 @@ h6.wp-block-heading {
 	gap: 0.5rem;
 }
 
+/* wp-block-post-terms custom for 2024 website
+ * For lightness, no styles are written here that can be added with the Editor's style
+*/
+.wp-block-post-terms a {
+	transition: all 200ms ease-out;
+	text-decoration: none;
+	padding: var(--scales-xs, 0.5rem);
+	border: 1px solid var(--wp--preset--color--custom-light-blue-alt, #5072ff);
+	background-color: #fff;
+}
+.wp-block-post-terms a:hover {
+	color: #fff;
+	background-color: var(--wp--preset--color--custom-light-blue-3-a-for-white, #1d43e1);
+}
+
+/* wp-block-post-author custom for 2024 website
+ * For lightness, no styles are written here that can be added with the Editor's style
+*/
+.wp-block-post-author p.wp-block-post-author__name {
+	font-size: inherit;
+	display: flex;
+	align-items: center;
+}
+.wp-block-post-author p.wp-block-post-author__name::before {
+	content: "";
+	display: flex;
+	width: 1rem;
+	height: 1rem;
+	margin-right: var(--scales-xs, 0.5rem);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(https://asia.wordcamp.org/2024/files/2023/12/icon-user.png);
+}
+
 /* template parts */
 .wp-site-blocks {
 	padding-top: 0;
