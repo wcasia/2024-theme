@@ -681,3 +681,75 @@ td.tix-right {
 	width: 70%;
 	height: 30px;
 }
+
+/*
+ for has background template styles
+ */
+.page-template-wp-custom-template-has-background-page .wca2024-has-background-title {
+	position: relative;
+}
+.page-template-wp-custom-template-has-background-page .wca2024-has-background-title::after {
+	content: "";
+	height: 5px;
+	width: 100cqi;
+	background-color: #fff;
+	filter: blur(2px);
+	position: absolute;
+	bottom: -2.5px;
+	left: calc(50% - 50cqi);
+}
+.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title {
+	display: grid;
+	place-items: center;
+	font-family: novel-display, sans-serif;
+	background: none;
+	background-clip: unset;
+	-webkit-text-fill-color: unset;
+	padding-top: clamp(var(--scales-2-xl, 4rem), 12vw, 7.5rem);
+	padding-bottom: clamp(var(--scales-3-xl, 5rem), 15vw, 10rem);
+	position: relative;
+}
+
+@media screen and (min-width: 980px) {
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title {
+		position: relative;
+	}
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title::before {
+		content: "";
+		position: absolute;
+		bottom: -16px;
+		display: block;
+		width: 1988px;
+		height: 52px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url(https://asia.wordcamp.org/2024/files/2023/12/bg-wave.png);
+	}
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title {
+		position: relative;
+	}
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::before,
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::after {
+		content: "";
+		display: flex;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		mix-blend-mode: multiply;
+		z-index: 1;
+	}
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::before {
+		width: 25.5rem;
+		height: 25.5rem;
+		left: -15%;
+		bottom: -25%;
+		background-image: url(https://asia.wordcamp.org/2024/files/2023/12/shaps-left.png);
+	}
+	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::after {
+		width: 23.2rem;
+		height: 16.8rem;
+		right: -20%;
+		bottom: -5%;
+		background-image: url(https://asia.wordcamp.org/2024/files/2023/12/shapes-right.png);
+	}
+}
