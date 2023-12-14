@@ -49,6 +49,11 @@ body {
 	container-type: inline-size;
 }
 
+.wp-site-blocks {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 .wca2024-has-gradient-text {
 	background: var(--wp--preset--gradient--custom-text-02, linear-gradient(91deg, #1d43e1 1.28%, #236fe2 43.86%, #452cd5 80.64%));
 	background-clip: text;
@@ -241,8 +246,20 @@ h6.wp-block-heading {
 	background-color: var(--wp--preset--color--custom-dark-blue-3-a-for-white, #2d03c2);
 	color: #fff;
 }
+.wp-block-navigation .wp-block-navigation__responsive-container-open {
+	background: url("https://asia.wordcamp.org/2024/files/2023/11/chevron-down.png") center right no-repeat;
+	background-size: 16px;
+	padding-right: 24px;
+}
 .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open {
-	padding: 2.5rem 2rem 5rem 2rem;
+	padding: 2.5rem 0 5rem;
+	height: 100vh;
+}
+.wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-close {
+	overflow-y: scroll;
+	padding-bottom: 10rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content > .wp-block-navigation__container {
 	width: 100%;
@@ -360,11 +377,8 @@ h6.wp-block-heading {
 }
 
 /* template parts */
-.wp-site-blocks {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
+/* header template parts custom for 2024 website
+*/
 .wca2024-site-logo-column {
 	max-width: 176px;
 }
@@ -377,12 +391,6 @@ h6.wp-block-heading {
 
 .wca2024-event-date-location figure {
 	line-height: 1;
-}
-
-.wp-block-navigation .wp-block-navigation__responsive-container-open {
-	background: url("https://asia.wordcamp.org/2024/files/2023/11/chevron-down.png") center right no-repeat;
-	background-size: 16px;
-	padding-right: 24px;
 }
 
 @media only screen and (min-width: 782px) and (max-width: 1200px) {
