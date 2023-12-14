@@ -601,6 +601,21 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	font-family: novel-display, sans-serif;
 }
 
+.wca2024-about-wordcamp .wca2024-video-column figure {
+	padding-right: 6.8rem;
+}
+@media only screen and (max-width: 991px) {
+	.wca2024-about-wordcamp .wca2024-video-column figure {
+		padding-right: 0;
+	}
+}
+.wca2024-about-wordcamp .wca2024-wc-details > div {
+	margin-left: -7.5rem;
+}
+@media only screen and (max-width: 991px) {
+	.wca2024-about-wordcamp .wca2024-wc-details > div {
+		margin-left: 0;
+	}
 /* Schedule Block */
 .wp-block-wordcamp-schedule .wordcamp-schedule__date {
 	font-size: clamp(var(--font-size-l, 2.2rem), var(--font-size-l, 2.2rem) + (1vw - 0.48rem) * 1.592, var(--font-size-xl, 2.7rem));
