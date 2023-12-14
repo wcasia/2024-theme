@@ -22,6 +22,7 @@
 	--font-size-display-m: 5.3rem;
 	--font-size-3xl: 4.3rem;
 	--font-size-2xl: 3.4rem;
+	--font-size-xl2: 3rem;
 	--font-size-xl: 2.7rem;
 	--font-size-l: 2.2rem;
 	--font-size-m: 1.8rem;
@@ -291,6 +292,19 @@ h6.wp-block-heading {
 	padding: 0;
 	gap: 0.5rem;
 }
+
+.has-background.wca2024-travel-section {
+	background-repeat: no-repeat !important;
+	background-position: right bottom !important;
+	background-size: 35% !important;
+}
+@media only screen and (max-width: 781px) {
+	.has-background.wca2024-travel-section {
+		background-size: 350px !important;
+	}
+}
+.has-background.wca2024-travel-section h2.wp-block-heading {
+	font-size: clamp(var(--font-size-l, 2.7rem), var(--font-size-l, 2.7rem) + (1vw - 0.48rem) * 1.592, var(--font-size-xl, 3rem));
 
 /* wp-block-post-terms custom for 2024 website
  * For lightness, no styles are written here that can be added with the Editor's style
