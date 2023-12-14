@@ -305,6 +305,7 @@ h6.wp-block-heading {
 }
 .has-background.wca2024-travel-section h2.wp-block-heading {
 	font-size: clamp(var(--font-size-l, 2.7rem), var(--font-size-l, 2.7rem) + (1vw - 0.48rem) * 1.592, var(--font-size-xl, 3rem));
+}
 
 /* wp-block-post-terms custom for 2024 website
  * For lightness, no styles are written here that can be added with the Editor's style
@@ -616,6 +617,8 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	.wca2024-about-wordcamp .wca2024-wc-details > div {
 		margin-left: 0;
 	}
+}
+
 /* Schedule Block */
 .wp-block-wordcamp-schedule .wordcamp-schedule__date {
 	font-size: clamp(var(--font-size-l, 2.2rem), var(--font-size-l, 2.2rem) + (1vw - 0.48rem) * 1.592, var(--font-size-xl, 2.7rem));
