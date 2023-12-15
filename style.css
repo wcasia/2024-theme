@@ -794,8 +794,13 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	width: 100%;
 }
 .wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-speakers__content {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
 	color: var(--wp--preset--color--custom-gray-text);
+	display: -webkit-box;
 	order: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 @media only screen and (min-width: 1025px) {
 	.wordcamp-speakers {
