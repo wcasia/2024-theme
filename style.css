@@ -1053,7 +1053,7 @@ td.tix-right {
 
 /* Gradient Background Template style */
 .page-template-wp-custom-template-gradient-background main {
-	background-image: url("https://asia.wordcamp.org/2024/files/2023/12/background.png");
+	background-image: url("https://asia.wordcamp.org/2024/files/2023/12/background-speakers.jpg");
 	background-repeat: no-repeat;
 	background-size: 100vw;
 	height: auto;
@@ -1072,6 +1072,7 @@ td.tix-right {
 
 /** Single Speaker Style **/
 .wcb_speaker-template-speaker-single main {
+	background-image: url("https://asia.wordcamp.org/2024/files/2023/12/background-speaker.jpg");
 	background-repeat: no-repeat;
 	background-size: 100vw;
 	height: auto;
@@ -1097,7 +1098,7 @@ td.tix-right {
 	background-image: none;
 	color: var(--wp--preset--color--custom-dark-blue-primary) !important;
 	font-family: var(--font-display, Sansita, novel-display, Roboto, sans-serif) !important;
-	font-size: var(--wp--preset--font-size--large);
+	font-size: clamp(2.032rem, 2.032rem + (1vw - 0.2rem) * 2.845, 3.625rem);
 	padding-bottom: 1rem;
 	padding-top: 1.25rem;
 }
@@ -1108,6 +1109,7 @@ td.tix-right {
 	color: var(--wp--preset--color--custom-dark-blue-primary);
 	cursor: pointer;
 	font-family: var(--font-body, "Roboto Slab", serif);
+	font-size: var(--wp--preset--font-size--x-large);
 	font-weight: 500;
 	text-decoration: none;
 }
