@@ -1081,14 +1081,17 @@ td.tix-right {
 }
 
 /** Single Sponsor Style **/
+.wcb_sponsor-template-sponsor-single :where(.wp-site-blocks) > main,
 .page-template-sponsor-single :where(.wp-site-blocks) > main {
 	-webkit-margin-before: 0;
 	margin-block-start: 0;
 }
+.wcb_sponsor-template-sponsor-single .wp-block-post-featured-image,
 .page-template-sponsor-single .wp-block-post-featured-image {
 	display: flex;
 	justify-content: center;
 }
+.wcb_sponsor-template-sponsor-single .wp-block-post-featured-image img,
 .page-template-sponsor-single .wp-block-post-featured-image img {
 	width: auto;
 }
