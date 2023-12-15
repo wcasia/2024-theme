@@ -376,6 +376,40 @@ h6.wp-block-heading {
 	font-family: var(--font-body, "Roboto Slab", serif);
 }
 
+/* Sponsor Block Customize */
+.wordcamp-sponsors.wordcamp-post-list {
+	-webkit-padding-start: 0;
+	padding-inline-start: 0;
+}
+.wordcamp-sponsors.wordcamp-post-list .wordcamp-sponsors__logo img.wordcamp-image__featured-image {
+	max-width: min(100%, 28rem);
+}
+.wordcamp-sponsors.wordcamp-post-list.wca2024-sponsor-snow .wordcamp-sponsors__logo img.wordcamp-image__featured-image {
+	max-width: min(100%, 21.5rem);
+}
+.wordcamp-sponsors.wordcamp-post-list.wca2024-sponsor-xiuguluan .wordcamp-sponsors__logo img.wordcamp-image__featured-image {
+	max-width: min(100%, 17.5rem);
+}
+.wordcamp-sponsors.wordcamp-post-list.wca2024-sponsor-data .wordcamp-sponsors__logo img.wordcamp-image__featured-image {
+	max-width: min(100%, 10rem);
+}
+.wordcamp-sponsors.wordcamp-post-list.wca2024-sponsor-xingang .wordcamp-sponsors__logo img.wordcamp-image__featured-image {
+	max-width: min(100%, 8rem);
+}
+
+@media (min-width: 400px) {
+	.wordcamp-sponsors.wordcamp-post-list.has-layout-grid {
+		gap: var(--scales-L, 2rem);
+	}
+}
+@media (min-width: 1024px) {
+	.wordcamp-sponsors.wordcamp-post-list.has-layout-grid.wca2024-sponsor-data {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	.wordcamp-sponsors.wordcamp-post-list.has-layout-grid.wca2024-sponsor-xingang {
+		grid-template-columns: repeat(8, 1fr);
+	}
+}
 /* template parts */
 /* header template parts custom for 2024 website
 */
@@ -884,6 +918,8 @@ td.tix-right {
 .wca2024-has-background-title,
 .page-template-wp-custom-template-has-background-page .wca2024-has-background-title,
 .single-wcb_session .wca2024-has-background-title {
+	-webkit-margin-before: 0;
+	margin-block-start: 0;
 	position: relative;
 }
 .wca2024-has-background-title::after,
