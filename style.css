@@ -712,6 +712,68 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	font-weight: 400;
 }
 
+/* WordCamp Speakers Block */
+.wordcamp-speakers {
+	grid-template-columns: repeat(1, 1fr) !important;
+	padding-left: 0 !important;
+}
+.wordcamp-speakers li.wordcamp-post-list__post {
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: var(--shadow-medium, 0 4px 20px 0 rgba(0, 0, 0, 0.12));
+	margin-bottom: 2.5rem;
+	margin-top: 5rem;
+	overflow: visible !important;
+	padding: 1.5rem clamp(2rem, 2vw, 3rem);
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker {
+	display: flex;
+	flex-direction: column;
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-speakers__title {
+	margin-bottom: 0;
+	margin-top: 0;
+	order: 2;
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-speakers__title a {
+	color: var(--wp--preset--color--custom-dark-blue-primary);
+	cursor: pointer;
+	font-family: var(--font-body, "Roboto Slab", serif);
+	font-weight: 500;
+	text-decoration: none;
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-speakers__title a:hover,
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-speakers__title a:focus {
+	color: var(--wp--preset--color--custom-gray-dark);
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-image__avatar-container {
+	border-radius: 9999px;
+	border: 3px solid var(--wp--preset--color--white);
+	height: 140px;
+	margin-top: -7.5rem;
+	order: 1;
+	width: 140px;
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-image__avatar-container img {
+	height: 100%;
+	width: 100%;
+}
+.wordcamp-speakers li.wordcamp-post-list__post .wordcamp-speaker .wordcamp-speakers__content {
+	color: var(--wp--preset--color--custom-gray-text);
+	order: 3;
+}
+@media only screen and (min-width: 1025px) {
+	.wordcamp-speakers {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 900px) {
+	.wordcamp-speakers {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
 /* page */
 /* only single (post) page style */
 .single main {
@@ -941,4 +1003,70 @@ td.tix-right {
 	display: none;
 	margin: 0;
 	padding: 0;
+}
+
+/* Gradient Background Template style */
+.page-template-wp-custom-template-gradient-background main {
+	background-image: url("https://asia.wordcamp.org/2024/files/2023/12/background.png");
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	height: auto;
+	margin-top: 0;
+	padding-top: var(--wp--preset--spacing--50);
+	width: 100vw;
+}
+.page-template-wp-custom-template-gradient-background .wp-block-post-title {
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+	background-clip: unset;
+	background-image: none;
+	color: var(--wp--preset--color--white) !important;
+	font-family: var(--font-display, Sansita, novel-display, Roboto, sans-serif) !important;
+}
+
+/** Single Speaker Style **/
+.wcb_speaker-template-speaker-single main {
+	background-image: url("https://asia.wordcamp.org/2024/files/2023/12/background.png");
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	height: auto;
+	margin-top: 0;
+	padding-top: 7.5rem !important;
+	width: 100vw;
+	background-position: center -200px;
+}
+.wcb_speaker-template-speaker-single main .wp-block-wordcamp-avatar {
+	border-radius: 9999px;
+	border: 8px solid var(--wp--preset--color--custom-dark-blue-primary);
+	height: 240px;
+	width: 240px;
+}
+.wcb_speaker-template-speaker-single main .wp-block-wordcamp-avatar img {
+	height: 100%;
+	width: 100%;
+}
+.wcb_speaker-template-speaker-single main .wp-block-post-title {
+	-webkit-background-clip: unset;
+	-webkit-text-fill-color: unset;
+	background-clip: unset;
+	background-image: none;
+	color: var(--wp--preset--color--custom-dark-blue-primary) !important;
+	font-family: var(--font-display, Sansita, novel-display, Roboto, sans-serif) !important;
+	font-size: var(--wp--preset--font-size--large);
+	padding-bottom: 1rem;
+	padding-top: 1.25rem;
+}
+.wcb_speaker-template-speaker-single main .entry-content .speaker-avatar {
+	display: none !important;
+}
+.wcb_speaker-template-speaker-single .wp-block-wordcamp-speaker-sessions p a {
+	color: var(--wp--preset--color--custom-dark-blue-primary);
+	cursor: pointer;
+	font-family: var(--font-body, "Roboto Slab", serif);
+	font-weight: 500;
+	text-decoration: none;
+}
+.wcb_speaker-template-speaker-single .wp-block-wordcamp-speaker-sessions .wordcamp-speaker-sessions__session-info {
+	font-family: var(--font-body, "Roboto", sans-serif);
+	text-transform: uppercase;
 }
