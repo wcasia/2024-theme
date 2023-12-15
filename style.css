@@ -1079,3 +1079,16 @@ td.tix-right {
 	font-family: var(--font-body, "Roboto", sans-serif);
 	text-transform: uppercase;
 }
+
+/** Single Sponsor Style **/
+.page-template-sponsor-single :where(.wp-site-blocks) > main {
+	-webkit-margin-before: 0;
+	margin-block-start: 0;
+}
+.page-template-sponsor-single .wp-block-post-featured-image {
+	display: flex;
+	justify-content: center;
+}
+.page-template-sponsor-single .wp-block-post-featured-image img {
+	width: auto;
+}
