@@ -1038,6 +1038,7 @@ td.tix-right {
 	border: none !important;
 	color: var(--wp--preset--color--black);
 	padding-right: 0 !important;
+	pointer-events: none;
 }
 .single-wcb_session .session-meta-row .wp-block-post-terms a:hover,
 .single-wcb_session .session-meta-row .wp-block-post-terms a:focus {
