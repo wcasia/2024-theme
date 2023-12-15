@@ -1079,7 +1079,7 @@ td.tix-right {
 	margin-top: 0;
 	padding-top: 7.5rem !important;
 	width: 100vw;
-	background-position: center -200px;
+	background-position: center top;
 }
 .wcb_speaker-template-speaker-single main .wp-block-wordcamp-avatar {
 	border-radius: 9999px;
