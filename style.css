@@ -881,10 +881,12 @@ td.tix-right {
 /*
  for has background template styles
  */
+.wca2024-has-background-title,
 .page-template-wp-custom-template-has-background-page .wca2024-has-background-title,
 .single-wcb_session .wca2024-has-background-title {
 	position: relative;
 }
+.wca2024-has-background-title::after,
 .page-template-wp-custom-template-has-background-page .wca2024-has-background-title::after,
 .single-wcb_session .wca2024-has-background-title::after {
 	content: "";
@@ -896,6 +898,7 @@ td.tix-right {
 	bottom: -2.5px;
 	left: calc(50% - 50cqi);
 }
+.wca2024-has-background-title .wp-block-post-title,
 .page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title,
 .single-wcb_session .wca2024-has-background-title .wp-block-post-title {
 	display: grid;
@@ -910,10 +913,12 @@ td.tix-right {
 }
 
 @media screen and (min-width: 980px) {
+	.wca2024-has-background-title,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title,
 	.single-wcb_session .wca2024-has-background-title {
 		position: relative;
 	}
+	.wca2024-has-background-title::before,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title::before,
 	.single-wcb_session .wca2024-has-background-title::before {
 		content: "";
@@ -926,10 +931,13 @@ td.tix-right {
 		background-size: contain;
 		background-image: url(https://asia.wordcamp.org/2024/files/2023/12/bg-wave.png);
 	}
+	.wca2024-has-background-title .wp-block-post-title,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title,
 	.single-wcb_session .wca2024-has-background-title .wp-block-post-title {
 		position: relative;
 	}
+	.wca2024-has-background-title .wp-block-post-title::before,
+	.wca2024-has-background-title .wp-block-post-title::after,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::before,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::after,
 	.single-wcb_session .wca2024-has-background-title .wp-block-post-title::before,
@@ -942,6 +950,7 @@ td.tix-right {
 		mix-blend-mode: multiply;
 		z-index: 1;
 	}
+	.wca2024-has-background-title .wp-block-post-title::before,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::before,
 	.single-wcb_session .wca2024-has-background-title .wp-block-post-title::before {
 		width: 25.5rem;
@@ -950,6 +959,7 @@ td.tix-right {
 		bottom: -25%;
 		background-image: url(https://asia.wordcamp.org/2024/files/2023/12/shaps-left.png);
 	}
+	.wca2024-has-background-title .wp-block-post-title::after,
 	.page-template-wp-custom-template-has-background-page .wca2024-has-background-title .wp-block-post-title::after,
 	.single-wcb_session .wca2024-has-background-title .wp-block-post-title::after {
 		width: 23.2rem;
