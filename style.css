@@ -813,6 +813,45 @@ body .is-layout-constrained > .alignwide.wca2024-ticket-block {
 	}
 }
 
+@media screen and (min-width: 300px) {
+	#tix-attendees ul {
+		grid-template-columns: repeat(auto-fit, 280px) !important;
+	}
+}
+#tix-attendees .tix-attendee-list {
+	/* reset ul styles */
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	align-items: start;
+	justify-content: center;
+}
+#tix-attendees .tix-attendee-list li {
+	border-radius: var(--scales-XS, 0.5rem);
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+	-webkit-backdrop-filter: blur(25px);
+	backdrop-filter: blur(25px);
+	padding: 1.25rem 1rem;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	font-size: 0.875rem;
+	align-items: center;
+	width: 280px;
+	box-sizing: border-box;
+}
+#tix-attendees .tix-attendee-list .tix-name-on-the-event-badge {
+	color: var(--24-Dark-Blue-primary, #2d03c2);
+	font-size: 1.125rem;
+}
+#tix-attendees .tix-attendee-list .avatar {
+	grid-row: span 3;
+	width: var(--scales-3XL, 80px) !important;
+	height: var(--scales-3XL, 80px) !important;
+	margin: 0 var(--scales-XS, 0.5rem) 0 0 !important;
+	border: 3px solid var(--24-Dark-Blue-primary, #2d03c2);
+}
+
 /* page */
 /* only single (post) page style */
 .single main {
