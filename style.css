@@ -190,6 +190,61 @@ h6.wp-block-heading {
 	text-decoration-thickness: 2px;
 }
 
+/* Get Ticket button in menu for mobile */
+@media screen and (max-width: 991px) {
+	.get-ticket-button.wp-block-button .wp-block-button__link {
+		transition: all 200ms ease-out;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: var(--scales-xs, 0.5rem);
+		padding-right: 2.5rem;
+	}
+	.get-ticket-button.wp-block-button .wp-block-button__link:visited {
+		color: var(--wp--preset--color--base, #fff);
+	}
+	.get-ticket-button.wp-block-button .wp-block-button__link::before,
+	.get-ticket-button.wp-block-button .wp-block-button__link::after {
+		content: "";
+		position: absolute;
+		background: #fff;
+		border-radius: 0.5rem;
+		display: block;
+		opacity: 0.6;
+		width: 0.5rem;
+		height: 0.1rem;
+		right: 1rem;
+	}
+	.get-ticket-button.wp-block-button .wp-block-button__link::before {
+		transform: rotate(45deg) translateY(-0.25rem);
+	}
+	.get-ticket-button.wp-block-button .wp-block-button__link::after {
+		transform: rotate(-45deg) translateY(0.25rem);
+	}
+	.get-ticket-button.wp-block-button .wp-block-button__link:hover {
+		background-color: var(--wp--preset--color--custom-dark-blue-alt, #420efc);
+	}
+	.get-ticket-button.wp-block-button .wp-block-button__link:hover::before,
+	.get-ticket-button.wp-block-button .wp-block-button__link:hover::after {
+		opacity: 1;
+	}
+	.get-ticket-button.wp-block-button.get-ticket-button .wp-block-button__link {
+		background: #fff;
+		color: var(--wp--preset--color--custom-light-blue-3-a-for-white, #1d43e1);
+	}
+	.get-ticket-button.wp-block-button.get-ticket-button .wp-block-button__link::before,
+	.get-ticket-button.wp-block-button.get-ticket-button .wp-block-button__link::after {
+		background-color: var(--wp--preset--color--custom-gray-text, #5a6388);
+	}
+	.get-ticket-button.wp-block-button.get-ticket-button .wp-block-button__link:hover {
+		background-color: rgba(255, 255, 255, 0.9);
+		color: var(--wp--preset--color--custom-dark-blue-3-a-for-white, #280997);
+	}
+	.get-ticket-button.wp-block-button.get-ticket-button .wp-block-button__link:hover::before,
+	.get-ticket-button.wp-block-button.get-ticket-button .wp-block-button__link:hover::after {
+		background-color: var(--wp--preset--color--custom-light-blue-primary, #1d43e1);
+	}
+}
 /* wp-block-query custom for 2024 website
  * For lightness, no styles are written here that can be added with the Editor's style
 */
@@ -453,6 +508,9 @@ h6.wp-block-heading {
 	}
 }
 @media screen and (max-width: 991px) {
+	.site-header .wp-block-navigation__responsive-container .get-ticket-button-group {
+		order: -1;
+	}
 	.site-header .wp-block-navigation__responsive-container-open {
 		display: block !important;
 	}
